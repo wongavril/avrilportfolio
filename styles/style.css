@@ -352,6 +352,22 @@ header {
   margin: 50px 0;
 }
 
+.bio {
+  width: 65%;
+  display: flex;
+}
+
+.bioWritingHead {
+  font-family: 'Karla Bold';
+  font-size: 36px;
+  line-height: 120%;
+  padding-bottom: 30px;
+}
+
+.profilePic {
+  width: 100%;
+}
+
 @media screen and (max-width: 1150px) {
   header {
     width: 85%;
