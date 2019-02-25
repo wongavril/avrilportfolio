@@ -108,16 +108,17 @@ header {
 
 .projectImageContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
 }
 
 .projectInfo {
   text-align: left;
   line-height: 130%;
-  width: 55%;
+  width: 50%;
+  padding-left: 30px;
 }
 
 .projectName {
@@ -314,7 +315,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
 }
 
 .mockupImage {
@@ -323,7 +324,7 @@ header {
 
 .mockupInfo {
   margin-left: 10px;
-  width: 55%
+  width: 50%;
 }
 
 .label {
@@ -355,17 +356,34 @@ header {
 .bio {
   width: 65%;
   display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 
-.bioWritingHead {
+.bioHead {
   font-family: 'Karla Bold';
   font-size: 36px;
   line-height: 120%;
-  padding-bottom: 30px;
+  padding: 30px 0;
+}
+
+.bioContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bioImage {
+  width: 80%;
+  margin-right: 30px;
 }
 
 .profilePic {
   width: 100%;
+}
+
+.bioWriting {
+  width: 70%;
 }
 
 @media screen and (max-width: 1150px) {
@@ -386,6 +404,11 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .projectImageContainer {
+    justify-content: center;
+    align-items: center;
   }
 
   .projectInfo {
@@ -466,6 +489,26 @@ header {
     flex-direction: column;
     padding-top: 10px;
   }
+
+  .bio {
+    width: 85%;
+  }
+
+  .bioContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bioImage {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .bioWriting {
+    width: 100%;
+  }
+
 
 }
 
