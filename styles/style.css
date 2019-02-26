@@ -28,6 +28,49 @@
   src: url('./fonts/worksans/WorkSans-SemiBold.ttf');
 }
 
+@font-face {
+  font-family: 'Work Sans Thin';
+  src: url('./fonts/worksans/WorkSans-Thin.ttf');
+}
+
+.rotate90 {
+  transform-origin: 50% 50%;
+  transform: rotate(90deg);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.smoothContent {
+  padding-top: 35px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.hamburgerMenu {
+  position: relative;
+}
+
+.extendedMenu {
+  position: absolute;
+  justify-content: space-evenly;
+  width: 200px;
+  top: 120px;
+  left: -87px;
+}
+
+.menuText {
+  color: #F49C31;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -114,6 +157,10 @@ header {
   width: 50%;
 }
 
+.projectImage {
+  width: 90%;
+}
+
 .projectInfo {
   text-align: left;
   line-height: 130%;
@@ -169,12 +216,28 @@ header {
 
 .navbarButton {
   width: 105px;
+  font-family: 'Work Sans Thin';
 }
 
 .navbarText {
   display: flex;
   justify-content: space-between;
   width: 65%;
+}
+
+a:link {
+  color: #FFFBF5;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFFBF5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F49C31;
+  text-decoration: none;
 }
 
 .mainContent{
@@ -210,7 +273,7 @@ header {
 }
 
 .researchContainer {
-  width: 75%;
+  width: 95%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -241,7 +304,7 @@ header {
 }
 
 .personaContainer {
-  width: 75%;
+  width: 95%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -249,7 +312,7 @@ header {
 }
 
 .userflowContainer {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,7 +334,7 @@ header {
 }
 
 .wireframeSketches {
-  width: 640px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,7 +342,7 @@ header {
 }
 
 .imageContainer {
-  width: 75%;
+  width: 95%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -291,7 +354,7 @@ header {
 }
 
 .brandingContainer {
-  width: 75%;
+  width: 95%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -305,7 +368,7 @@ header {
 .mockupContainer {
   padding-bottom: 30px;
   display: flex;
-  width: 75%;
+  width: 95%;
   justify-content: center;
   align-items: center;
 }
@@ -315,7 +378,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 }
 
 .mockupImage {
@@ -409,6 +472,7 @@ header {
   .projectImageContainer {
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .projectInfo {
@@ -417,7 +481,7 @@ header {
   }
 
   .heroSection {
-    width: 85%;
+    width: 75%;
   }
 
   .navbarText {
@@ -496,8 +560,6 @@ header {
 
   .bioContent {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .bioImage {
@@ -507,6 +569,7 @@ header {
 
   .bioWriting {
     width: 100%;
+
   }
 
 
