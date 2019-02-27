@@ -225,6 +225,21 @@ header {
   width: 65%;
 }
 
+@media only screen and (max-width: 650px) {
+  .navbar {
+    height: 70px;
+  }
+  .navbarText {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+}
+
 a:link {
   color: #FFFBF5;
   text-decoration: none;
@@ -464,7 +479,6 @@ a:hover {
 
   .project {
     width: 85%;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -576,6 +590,7 @@ a:hover {
 }
 
 footer {
+  bottom: 0;
   width: 100%;
   height: 115px;
   background-color: #F49C31;
