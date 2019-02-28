@@ -1,0 +1,618 @@
+@font-face {
+  font-family: 'Karla';
+  src: url('./fonts/Karla/Karla-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Karla Bold';
+  src: url('./fonts/Karla/Karla-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./fonts/Proxima Nova/ProximaNova-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova SemiBold';
+  src: url('./fonts/Proxima Nova/Proxima Nova Semibold.otf');
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('./fonts/worksans/WorkSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Work Sans SemiBold';
+  src: url('./fonts/worksans/WorkSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Work Sans Thin';
+  src: url('./fonts/worksans/WorkSans-Thin.ttf');
+}
+
+.rotate90 {
+  transform-origin: 50% 50%;
+  transform: rotate(90deg);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.smoothContent {
+  padding-top: 35px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.hamburgerMenu {
+  position: relative;
+}
+
+.extendedMenu {
+  position: absolute;
+  justify-content: space-evenly;
+  width: 200px;
+  top: 120px;
+  left: -87px;
+}
+
+.menuText {
+  color: #F49C31;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFBF5;
+  color: #373737;
+  font-family: 'Proxima Nova';
+  font-size: 18px;
+  line-height: 130%;
+  margin-top: 30px;
+}
+
+header {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.smallLogo {
+  width: 50px;
+  height: 37.5px;
+}
+
+.menu {
+  width: 72.5%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.content {
+  width: 44%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  font-family: 'Karla Bold';
+  font-size: 36px;
+  line-height: 120%;
+  padding-top: 35px;
+}
+
+.byLine {
+  font-family: 'Karla';
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Work Sans';
+  font-size: 18px;
+  color: #F49C31;
+  padding: 70px 40px;
+}
+
+.project {
+  padding: 20px 0 30px 0;
+  display: flex;
+  width: 55%;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectImageContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 50%;
+}
+
+.projectImage {
+  width: 90%;
+}
+
+.projectInfo {
+  text-align: left;
+  line-height: 130%;
+  width: 50%;
+  padding-left: 30px;
+}
+
+.projectName {
+  font-family: 'Karla Bold';
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 130%;
+}
+
+.projectSubtitle {
+  font-family: 'Proxima Nova SemiBold';
+}
+
+.projectDescription {
+  padding: 20px 0;
+}
+
+.projectButton {
+  padding-top: 25px;
+}
+
+.heroSection {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heroDescription {
+  padding: 30px 0;
+}
+
+.navbarContainer {
+  margin: 50px 30px;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(55, 55, 55, .6);
+}
+
+.navbarButton {
+  width: 105px;
+  font-family: 'Work Sans Thin';
+}
+
+.navbarText {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+
+@media only screen and (max-width: 650px) {
+  .navbar {
+    height: 70px;
+  }
+  .navbarText {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.mainContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.title {
+  width: 100%;
+  font-family: 'Karla';
+  font-size: 36px;
+  text-align: left;
+  line-height: 130%;
+  padding: 30px 0 20px 0;
+}
+
+.subtitle {
+  width: 100%;
+  font-family: 'Proxima Nova SemiBold';
+  font-size: 24px;
+  line-height: 120%;
+  text-decoration: underline;
+  text-align: left;
+  padding: 15px 0;
+}
+
+.context {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.researchContainer {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.competitorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.competitorIcon {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.competitiveAnalysis {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.personaContainer {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.userflowContainer {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.userFlow {
+  width: 50%;
+  margin: 5px;
+}
+
+.wireframeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.wireframeSketches {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.imageContainer {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wireframe {
+  width: 50%;
+  margin: 5px;
+}
+
+.brandingContainer {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.branding {
+  margin: 15px;
+}
+
+.mockupContainer {
+  padding-bottom: 30px;
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+}
+
+.mockup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mockupImage {
+  width: 100%;
+}
+
+.mockupInfo {
+  margin-left: 10px;
+  width: 50%;
+}
+
+.label {
+  font-family: 'Work Sans SemiBold';
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.caption {
+  font-family: 'Work Sans';
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.moreProjects {
+  font-family: 'Karla Bold';
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 130%;
+  margin: 50px 0;
+}
+
+.bio {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.bioHead {
+  font-family: 'Karla Bold';
+  font-size: 36px;
+  line-height: 120%;
+  padding: 30px 0;
+}
+
+.bioContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bioImage {
+  width: 80%;
+  margin-right: 30px;
+}
+
+.profilePic {
+  width: 100%;
+}
+
+.bioWriting {
+  width: 70%;
+}
+
+@media screen and (max-width: 1150px) {
+  header {
+    width: 85%;
+  }
+
+  .menu {
+    width: 85%;
+  }
+
+  .content {
+    width: 85%;
+  }
+
+  .project {
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectImageContainer {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .projectInfo {
+    width: 95%;
+    padding-top: 10px;
+  }
+
+  .heroSection {
+    width: 75%;
+  }
+
+  .navbarText {
+    width: 85%;
+  }
+
+  .mainContent {
+    width: 85%;
+  }
+
+  .researchContainer {
+    flex-direction: column;
+  }
+
+  .research {
+    margin-bottom: 15px;
+  }
+
+  .personaContainer {
+    flex-direction: column;
+  }
+
+  .persona {
+    margin-bottom: 30px;
+  }
+
+  .imageContainer {
+    flex-direction: column;
+  }
+
+  .userFlow {
+    width: 100%;
+  }
+
+  .wireframeContainer {
+    flex-direction: column;
+  }
+
+  .wireframeSketches {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
+  .imageContainer {
+    width: 100%;
+  }
+
+  .wireframe {
+    width: 100%;
+  }
+
+  .brandingContainer {
+    flex-direction: column;
+  }
+
+  .mockupContainer {
+    width: 85%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mockup {
+    width: 100%;
+  }
+
+  .mockupInfo {
+    width: 100%;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .bio {
+    width: 85%;
+  }
+
+  .bioContent {
+    flex-direction: column;
+  }
+
+  .bioImage {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .bioWriting {
+    width: 100%;
+
+  }
+
+
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #F49C31;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer {
+  font-family: 'Work Sans';
+  font-size: 36px;
+  color: #FFFBF5;
+}
+
+.spacer {
+  border-bottom: 1px solid white;
+  width: 72.5%;
+  margin: 20px 0 15px 0;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 210px;
+}

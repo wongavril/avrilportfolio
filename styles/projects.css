@@ -253,6 +253,7 @@ a:visited {
 a:hover {
   color: #F49C31;
   text-decoration: none;
+  font-family: 'Work Sans SemiBold';
 }
 
 .mainContent{
