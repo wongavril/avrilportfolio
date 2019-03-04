@@ -2,6 +2,13 @@
 <html>
   <head>
     <title>UX Designer | Avril Wong</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+    <!-- AOS Style -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom Style -->
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/home.css">
   </head>
@@ -20,7 +27,7 @@
       </div>
     </header>
 
-    <div class="content">
+    <div class="content" data-aos="fade-up">
       <img src="deliverables/icons/AVWlogo.png"/>
       <div>
         <div class="hero">
@@ -34,14 +41,14 @@
 
       <div class="indicatorSpacing">
         <a href="#mywork">
-          <div class="indicator">
+          <div class="animated pulse slow infinite indicator">
             <div>see my work</div>
             <img class="icon" src="deliverables/icons/icons8-expand2.png"/>
           </div>
         </a>
       </div>
     </div>
-    <div id="mywork" class="project">
+    <div id="mywork" class="project" data-aos="fade-up">
       <div class="projectImageContainer">
         <img class="projectImage" src="deliverables/casestudy1/others/hero.png"/>
       </div>
@@ -55,7 +62,7 @@
         <img class="projectButton" src="deliverables/icons/casestudybutton.png"/>
       </div>
     </div>
-    <div class="project">
+    <div class="project" data-aos="fade-up">
       <div class="projectImageContainer">
         <img class="projectImage" src="deliverables/casestudy1/others/hero.png"/>
       </div>
@@ -81,5 +88,16 @@
     </div>
   </footer>
 
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+  <!-- AOS Javascript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom script -->
   <script src="scripts.js"></script>
 </html>
