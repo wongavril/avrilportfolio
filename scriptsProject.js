@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
-  /* STICKY LOGIC */
+  /* STICKY LOGIC*/
   const navbar = document.getElementById("navbar");
   const mainContent = document.getElementById("mainContent");
 
