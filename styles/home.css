@@ -85,7 +85,7 @@ body {
 }
 
 header {
-  width: 65%;
+  width: 85%;
   display: flex;
   justify-content: flex-end;
 }
@@ -96,7 +96,7 @@ header {
 }
 
 .menu {
-  width: 72.5%;
+  width: 85%;
   display: flex;
   justify-content: flex-end;
 }
@@ -107,7 +107,7 @@ header {
 }
 
 .content {
-  width: 44%;
+  width: 85%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -158,18 +158,18 @@ header {
 
 .project {
   padding: 20px 0 30px 0;
+  width: 85%;
   display: flex;
-  width: 55%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .projectImageContainer {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
-  width: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .projectImage {
@@ -179,8 +179,8 @@ header {
 .projectInfo {
   text-align: left;
   line-height: 130%;
-  width: 50%;
-  padding-left: 30px;
+  width: 95%;
+  padding-top: 10px;
 }
 
 .projectName {
@@ -196,56 +196,6 @@ header {
 
 .projectDescription {
   padding: 20px 0;
-}
-
-.heroSection {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.heroDescription {
-  padding: 30px 0;
-}
-
-.navbarContainer {
-  margin: 50px 30px;
-  width: 100%;
-}
-
-.navbar {
-  width: 100%;
-  height: 35px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgba(55, 55, 55, .6);
-}
-
-.navbarButton {
-  width: 105px;
-  font-family: 'Work Sans Thin';
-}
-
-.navbarText {
-  display: flex;
-  justify-content: space-between;
-  width: 65%;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 .mainContent{
@@ -280,35 +230,36 @@ a:hover {
   padding-bottom: 50px;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (min-width: 1150px) {
   header {
-    width: 85%;
+    width: 65%;
   }
 
   .menu {
-    width: 85%;
+    width: 72.5%;
   }
 
   .content {
-    width: 85%;
+    width: 44%;
   }
 
   .project {
     width: 85%;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
   }
 
   .projectImageContainer {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 50%;
   }
 
   .projectInfo {
-    width: 95%;
-    padding-top: 10px;
+    width: 50%;
+    padding-left: 30px;
   }
 }
 
