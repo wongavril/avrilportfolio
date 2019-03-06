@@ -23,10 +23,3 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 
 });
-
-// AOS ANIMATIONS
-$(document).ready(function(){
-  AOS.init({
- duration: 1100
-});
-});
