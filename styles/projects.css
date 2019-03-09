@@ -88,6 +88,7 @@ header {
   width: 65%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .smallLogo {
@@ -112,6 +113,19 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.button {
+  background-color: #F49C31;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Work Sans';
+  color: #FFFBF5;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
 }
 
 .hero {
@@ -187,6 +201,20 @@ header {
   padding-top: 25px;
 }
 
+.button {
+  background-color: #F49C31;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Work Sans';
+  color: #FFFBF5;
+  padding: 8px 16px;
+  margin: 30px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
 .heroSection {
   width: 40%;
   display: flex;
@@ -225,7 +253,54 @@ header {
   width: 65%;
 }
 
-@media only screen and (max-width: 650px) {
+.personaContainer {
+  width: 72.5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.persona {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-family: 'Work Sans';
+  line-height: 130%;
+  font-size: 16px;
+}
+
+.personaName {
+  font-family: 'Work Sans SemiBold';
+  font-size: 36px;
+  padding: 15px 0;
+}
+
+.personaDescription {
+  font-size: 18px;
+}
+
+.personaMotivation {
+  font-family: 'Work Sans Thin';
+  font-style: italic;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.personaTitle {
+  width: 100%;
+  font-family: 'Work Sans SemiBold';
+  font-size: 18px;
+  padding: 15px 0;
+}
+
+.personaContent {
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1150px) {
   .navbar {
     height: 70px;
   }
@@ -465,7 +540,7 @@ a:hover {
   width: 70%;
 }
 
-@media screen and (max-width: 1150px) {
+/*@media screen and (max-width: 1150px) {
   header {
     width: 85%;
   }
@@ -588,7 +663,7 @@ a:hover {
   }
 
 
-}
+}*/
 
 footer {
   bottom: 0;

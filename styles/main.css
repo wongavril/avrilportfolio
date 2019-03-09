@@ -88,6 +88,7 @@ header {
   width: 65%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .smallLogo {
@@ -112,6 +113,19 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.button {
+  background-color: #F49C31;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Work Sans';
+  color: #FFFBF5;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
 }
 
 .hero {

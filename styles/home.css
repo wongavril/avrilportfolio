@@ -71,6 +71,18 @@
   color: #F49C31;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -88,11 +100,7 @@ header {
   width: 85%;
   display: flex;
   justify-content: flex-end;
-}
-
-.smallLogo {
-  width: 50px;
-  height: 37.5px;
+  margin-bottom: 30px;
 }
 
 .menu {
@@ -131,7 +139,7 @@ header {
   font-family: 'Karla Bold';
   font-size: 36px;
   line-height: 120%;
-  padding-top: 35px;
+  padding-top: 50px;
 }
 
 .byLine {
@@ -203,7 +211,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 65%;
+  width: 85%;
 }
 
 .title {
@@ -240,11 +248,11 @@ header {
   }
 
   .content {
-    width: 44%;
+    width: 65%;
   }
 
   .project {
-    width: 85%;
+    width: 65%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
