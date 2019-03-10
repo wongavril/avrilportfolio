@@ -680,9 +680,11 @@ footer {
 }
 
 .footer {
-  font-family: 'Work Sans';
+  font-family: 'Work Sans SemiBold';
   font-size: 36px;
   color: #FFFBF5;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .spacer {

@@ -327,18 +327,21 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  padding-top: 15px;
 }
 
 .footer {
-  font-family: 'Work Sans';
+  font-family: 'Work Sans SemiBold';
   font-size: 36px;
   color: #FFFBF5;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .spacer {
   border-bottom: 1px solid white;
   width: 72.5%;
-  margin: 20px 0 15px 0;
+  margin: 20px 0 20px 0;
 }
 
 .footerIcons {
@@ -346,4 +349,12 @@ footer {
   justify-content: space-around;
   align-items: center;
   width: 250px;
+}
+
+.footerLink {
+  border-bottom: 2px solid #F49C31;
+}
+
+.footerLink:hover {
+  border-bottom: 2px solid #FFFBF5;
 }
