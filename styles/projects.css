@@ -135,7 +135,7 @@ header {
 
 .button {
   background-color: #F49C31;
-  border: none;
+  border: 1px solid #F49C31;
   border-radius: 8px;
   font-family: 'Work Sans';
   color: #FFFBF5;
@@ -146,35 +146,13 @@ header {
   font-size: 18px;
 }
 
-.hero {
-  font-family: 'Karla Bold';
-  font-size: 36px;
-  line-height: 120%;
-  padding-top: 35px;
-}
-
-.byLine {
-  font-family: 'Karla';
-  font-size: 18px;
-  font-weight: 700;
-  padding-top: 75px;
-  display: flex;
-  justify-content: center;
-}
-
-.indicator {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Work Sans';
-  font-size: 18px;
+.button:hover {
+  background-color: #FFFBF5;
   color: #F49C31;
-  padding: 70px 40px;
 }
 
 .project {
-  padding-bottom: 50px;
+  padding: 50px 0;
   width: 85%;
   display: flex;
   justify-content: center;
@@ -183,9 +161,9 @@ header {
 
 .projectImageContainer {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  flex-direction: column;
   width: 50%;
 }
 
@@ -219,25 +197,6 @@ header {
   padding-top: 25px;
 }
 
-.button {
-  background-color: #F49C31;
-  border: 1px solid #F49C31;
-  border-radius: 8px;
-  font-family: 'Work Sans';
-  color: #FFFBF5;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-}
-
-.button:hover {
-  background-color: #FFFBF5;
-  color: #F49C31;
-}
-
-
 .heroSection {
   width: 40%;
   display: flex;
@@ -245,6 +204,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+  animation-duration: 1.5s;
 }
 
 .heroDescription {
@@ -254,6 +214,7 @@ header {
 .navbarContainer {
   margin: 50px 30px;
   width: 100%;
+  z-index: 99;
 }
 
 .navbar {
@@ -535,6 +496,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation-duration: 1.5s;
 }
 
 .moreProjects {

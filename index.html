@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>UX Designer | Avril Wong</title>
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/home.css">
-    <link rel="stylesheet" type="text/css" href="styles/animate.css">
   </head>
 
   <body>
@@ -23,7 +23,7 @@
       </div>
     </header>
 
-    <div class="content">
+    <div class="animated fadeInUp content">
       <img class="largeLogo" src="images/icons/AVWlogo.png"/>
       <div>
         <div class="hero">
@@ -35,47 +35,51 @@
         <div class="byLine">UX Designer | San Francisco, CA</div>
       </div>
 
-      <div class="indicatorSpacing">
-        <a class="indicatorLink" href="#mywork">
-          <div class="animated infinite bounce slower indicator">
-            <div>see my work</div>
-            <img class="icon" src="images/icons/icons8-chevron.png"/>
+        <div class="indicatorSpacing">
+          <a class="indicatorLink" href="#mywork">
+            <div class="animated bounce indicator">
+              <div>see my work</div>
+              <img class="icon" src="images/icons/icons8-chevron.png"/>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    <div class="scroll-animations mainContent">
+      <div id="mywork" class="animated project">
+        <div class="projectImageContainer">
+          <img class="projectImage" src="images/project1/hero.png"/>
+        </div>
+        <div class="projectInfo">
+          <div class="projectName">VIVID</div>
+          <div class="projectSubtitle">Saas Cloud Storage | Web & iOS Design</div>
+          <div class="projectDescription">
+            A platform for fashionistas to get inspirations and to inspire others
+            seamlessly at one place.
           </div>
-        </a>
-      </div>
-    </div>
-    <div id="mywork" class="project">
-      <div class="projectImageContainer">
-        <img class="projectImage" src="images/project1/hero.png"/>
-      </div>
-      <div class="projectInfo">
-        <div class="projectName">VIVID</div>
-        <div class="projectSubtitle">Saas Cloud Storage | Web & iOS Design</div>
-        <div class="projectDescription">
-          A platform for fashionistas to get inspirations and to inspire others
-          seamlessly at one place.
-        </div>
-        <div class="projectButton">
-          <a href="projectVIVID.html" class="button">View Case Study</a>
+          <div class="projectButton">
+            <a href="projectVIVID.html" class="button">View Case Study</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="project">
-      <div class="projectImageContainer">
-        <img class="projectImage" src="images/project1/hero.png"/>
-      </div>
-      <div class="projectInfo">
-        <div class="projectName">VIVID</div>
-        <div class="projectSubtitle">Saas Cloud Storage | Web & iOS Design</div>
-        <div class="projectDescription">
-          A platform for fashionistas to get inspirations and to inspire others
-          seamlessly at one place.
+      <div class="animated project">
+        <div class="projectImageContainer">
+          <img class="projectImage" src="images/project1/hero.png"/>
         </div>
-        <div class="projectButton">
-          <a href="projectVIVID.html" class="button">View Case Study</a>
+        <div class="projectInfo">
+          <div class="projectName">VIVID</div>
+          <div class="projectSubtitle">Saas Cloud Storage | Web & iOS Design</div>
+          <div class="projectDescription">
+            A platform for fashionistas to get inspirations and to inspire others
+            seamlessly at one place.
+          </div>
+          <div class="projectButton">
+            <a href="projectVIVID.html" class="button">View Case Study</a>
+          </div>
         </div>
       </div>
     </div>
+
   </body>
   <footer>
     <div class="footer">Let's Connect!</div>
@@ -88,6 +92,6 @@
     </div>
   </footer>
 
-  <!-- Custom script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="scripts.js"></script>
 </html>
