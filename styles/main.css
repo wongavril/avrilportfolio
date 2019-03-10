@@ -67,11 +67,7 @@
   left: -87px;
 }
 
-.menuText {
-  color: #F49C31;
-}
-
-.menuLink a {
+.menuLink {
   text-decoration: none;
   color: #F49C31;
 }
@@ -501,12 +497,13 @@ a:hover {
   width: 70%;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 990px) {
   header {
     width: 85%;
   }
 
   .menu {
+    cursor: pointer;
     width: 85%;
   }
 

@@ -67,9 +67,26 @@
   left: -87px;
 }
 
-.menuText {
+.menuLink {
+  text-decoration: none;
   color: #F49C31;
 }
+
+.menuLink:link {
+  text-decoration: none;
+  color: #F49C31;
+}
+
+.menuLink:hover {
+  text-decoration: underline;
+  color: #F49C31;
+}
+
+.menuLink:visited {
+  text-decoration: none;
+  color: #F49C31;
+}
+
 
 body {
   display: flex;
@@ -98,6 +115,7 @@ header {
 
 .menu {
   width: 72.5%;
+  cursor: pointer;
   display: flex;
   justify-content: flex-end;
 }
@@ -158,7 +176,6 @@ header {
 .project {
   padding-bottom: 50px;
   display: flex;
-  width: 55%;
   justify-content: center;
   align-items: center;
 }
@@ -282,7 +299,7 @@ header {
 }
 
 .persona {
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -291,6 +308,7 @@ header {
   font-family: 'Work Sans';
   line-height: 130%;
   font-size: 16px;
+  margin: 30px 50px 50px 50px;
 }
 
 .personaName {
@@ -318,6 +336,7 @@ header {
 }
 
 .personaContent {
+  width: 100%;
   padding-bottom: 30px;
 }
 
@@ -330,10 +349,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .project {
-    flex-direction: column;
-  }
 }
 
 .mainContent{
@@ -342,6 +357,16 @@ header {
   justify-content: center;
   align-items: center;
   width: 65%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
 }
 
 .title {
@@ -402,9 +427,8 @@ header {
 .personaContainer {
   width: 95%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .userflowContainer {
@@ -467,6 +491,7 @@ header {
   width: 95%;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .mockup {
@@ -545,7 +570,7 @@ header {
   width: 70%;
 }
 
-/*@media screen and (max-width: 1150px) {
+@media screen and (max-width: 990px) {
   header {
     width: 85%;
   }
@@ -559,7 +584,7 @@ header {
   }
 
   .project {
-    width: 85%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -600,7 +625,9 @@ header {
   }
 
   .persona {
-    margin-bottom: 30px;
+    width: 100%;
+    flex-direction: column;
+    margin:30px 0 50px 0;
   }
 
   .imageContainer {
@@ -668,7 +695,7 @@ header {
   }
 
 
-}*/
+}
 
 footer {
   bottom: 0;
