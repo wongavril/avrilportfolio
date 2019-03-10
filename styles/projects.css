@@ -57,6 +57,7 @@
 
 .hamburgerMenu {
   position: relative;
+  z-index: 99;
 }
 
 .extendedMenu {
@@ -214,7 +215,7 @@ header {
 .navbarContainer {
   margin: 50px 30px;
   width: 100%;
-  z-index: 99;
+  z-index: 98;
 }
 
 .navbar {
@@ -352,7 +353,6 @@ header {
 
 .context {
   width: 100%;
-  padding-bottom: 50px;
 }
 
 .researchContainer {
@@ -448,7 +448,6 @@ header {
 }
 
 .mockupContainer {
-  padding-bottom: 30px;
   display: flex;
   width: 95%;
   justify-content: center;
@@ -676,6 +675,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 15px;
   margin-top: 20px;
 }
 
@@ -698,4 +698,12 @@ footer {
   justify-content: space-around;
   align-items: center;
   width: 250px;
+}
+
+.footerLink {
+  border-bottom: 2px solid #F49C31;
+}
+
+.footerLink:hover {
+  border-bottom: 2px solid #FFFBF5;
 }

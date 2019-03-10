@@ -57,6 +57,7 @@
 
 .hamburgerMenu {
   position: relative;
+  z-index: 99;
 }
 
 .extendedMenu {

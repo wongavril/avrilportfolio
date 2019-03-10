@@ -57,6 +57,7 @@
 
 .hamburgerMenu {
   position: relative;
+  z-index: 99;
 }
 
 .extendedMenu {
@@ -632,6 +633,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 15px;
   margin-top: 20px;
 }
 
@@ -654,4 +656,12 @@ footer {
   justify-content: space-around;
   align-items: center;
   width: 250px;
+}
+
+.footerLink {
+  border-bottom: 2px solid #F49C31;
+}
+
+.footerLink:hover {
+  border-bottom: 2px solid #FFFBF5;
 }
