@@ -203,17 +203,22 @@ header {
 
 .button {
   background-color: #F49C31;
-  border: none;
+  border: 1px solid #F49C31;
   border-radius: 8px;
   font-family: 'Work Sans';
   color: #FFFBF5;
   padding: 8px 16px;
-  margin: 30px 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
 }
+
+.button:hover {
+  background-color: #FFFBF5;
+  color: #F49C31;
+}
+
 
 .heroSection {
   width: 40%;
@@ -245,6 +250,22 @@ header {
 .navbarButton {
   width: 105px;
   font-family: 'Work Sans Thin';
+}
+
+.navbarButton:link {
+  color: #FFFBF5;
+  text-decoration: none;
+}
+
+.navbarButton:visited {
+  color: #FFFBF5;
+  text-decoration: none;
+}
+
+.navbarButton:hover {
+  color: #F49C31;
+  text-decoration: none;
+  font-family: 'Work Sans SemiBold';
 }
 
 .navbarText {
@@ -313,22 +334,6 @@ header {
   .project {
     flex-direction: column;
   }
-}
-
-a:link {
-  color: #FFFBF5;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #FFFBF5;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #F49C31;
-  text-decoration: none;
-  font-family: 'Work Sans SemiBold';
 }
 
 .mainContent{
