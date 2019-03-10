@@ -242,6 +242,10 @@ header {
   padding: 20px 0;
 }
 
+.projectButton {
+  margin-top: 25px;
+}
+
 .mainContent{
   display: flex;
   flex-direction: column;

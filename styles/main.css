@@ -114,6 +114,7 @@ header {
 
 .menu {
   width: 72.5%;
+  cursor: pointer;
   display: flex;
   justify-content: flex-end;
 }
@@ -503,7 +504,6 @@ a:hover {
   }
 
   .menu {
-    cursor: pointer;
     width: 85%;
   }
 
