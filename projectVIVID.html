@@ -11,18 +11,21 @@
       gtag('config', 'UA-135998158-1');
     </script>
 
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>VIVID | Saas Cloud Storage</title>
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/projects.css">
   </head>
 
   <body>
     <header>
       <a href="index.html"><img class="smallLogo" src="images/icons/AVWlogo.png"/></a>
-      <div class="hamburgerMenu">
+      <div id="hamburgerMenu" class="hamburgerMenu">
         <div id="menuIcon" class="menu">
           <img class="icon" src="images/icons/icons8-menu.png"/>
         </div>
@@ -34,13 +37,13 @@
       </div>
     </header>
 
-    <div class="animated fadeInUp heroSection">
+    <div class="heroSection">
       <div class="projectName">VIVID</div>
       <div class="heroDescription">
         A platform for fashionistas to get inspirations and to inspire others
         seamlessly at one place.
       </div>
-      <div class="heroImageContainer">
+      <div class="heroImageContainer" data-aos="fade-up" data-aos-duration="1500">
         <img class="projectImage" src="images/project1/hero.png"/>
       </div>
       <div class="projectButton">
@@ -60,7 +63,7 @@
       </div>
     </div>
 
-    <div id="mainContent" class="scroll-animations mainContent">
+    <div id="mainContent" class="mainContent">
       <div class="row">
         <div id="summary" class="title">SUMMARY</div>
         <div class="context">
@@ -101,13 +104,37 @@
         </div>
       </div>
 
-      <div class="animated row">
-        <div class="researchContainer">
-          <div class="research">
-            <img src="images/project1/helpful.png"/>
+      <div class="row">
+        <div class="researchContainer" data-aos="fade-up" data-aos-duration="1300">
+          <div class="userResearch">
+            <div class="researchTitle">What is helpful?</div>
+            <div class="researchBG">
+              <div class="researchNumber">80%</div>
+              <div class="researchContent">
+                said organizing content with categories, tags etc.
+              </div>
+            </div>
+            <div class="researchBG">
+              <div class="researchNumber">66.7%</div>
+              <div class="researchContent">
+                said real-time collaboration help increasing productivity
+              </div>
+            </div>
           </div>
-          <div class="research">
-            <img src="images/project1/frustrating.png"/>
+          <div class="userResearch">
+            <div class="researchTitle">What is frustrating?</div>
+            <div class="researchBG">
+              <div class="researchNumber">30.8%</div>
+              <div class="researchContent">
+                said searching saved content
+              </div>
+            </div>
+            <div class="researchBG">
+              <div class="researchNumber">23.1%</div>
+              <div class="researchContent">
+                said about setting privacy of content
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -126,7 +153,7 @@
 
       <div class="row">
         <div class="competitorContainer">
-          <div class="animated competitorIcon">
+          <div class="competitorIcon" data-aos="fade-up" data-aos-duration="1300">
             <img src="images/project1/lookbook.png">
             <img src="images/project1/stylebook.png">
             <img src="images/project1/wear.png">
@@ -156,8 +183,8 @@
       </div>
 
       <div class="row">
-        <div class="animated personaContainer">
-          <div class="persona">
+        <div class="personaContainer">
+          <div class="persona" data-aos="fade-up" data-aos-duration="1300">
             <div class="personaImage">
               <img src="images/project1/persona1.png"/>
             </div>
@@ -199,7 +226,7 @@
               - Difficult to search her saved content
             </div>
           </div>
-          <div class="animated persona">
+          <div class="persona" data-aos="fade-up" data-aos-duration="1300">
             <div class="personaImage">
               <img src="images/project1/persona2.png"/>
             </div>
@@ -258,42 +285,40 @@
       <div class="row">
         <div class="userflowContainer">
           <div class="imageContainer">
-              <img class="userFlow" src="images/project1/onboarding.png">
-              <img class="userFlow" src="images/project1/create.png">
+              <img class="userFlow" data-aos="fade-up" data-aos-duration="1300" src="images/project1/onboarding.png">
+              <img class="userFlow" data-aos="fade-up" data-aos-duration="1300" src="images/project1/create.png">
           </div>
           <div class="imageContainer">
-              <img class="userFlow" src="images/project1/share.png">
-              <img class="userFlow" src="images/project1/organize.png">
+              <img class="userFlow" data-aos="fade-up" data-aos-duration="1300" src="images/project1/share.png">
+              <img class="userFlow" data-aos="fade-up" data-aos-duration="1300"src="images/project1/organize.png">
           </div>
         </div>
       </div>
 
       <div class="row">
         <div class="subtitle">Wireframe</div>
-
-          <img class="wireframeSketches" src="images/project1/sketches.jpg">
+          <img class="wireframeSketches" data-aos="fade-up" data-aos-duration="1300" src="images/project1/sketches.jpg">
           <div class="context">
             I sketched the wireframe on paper, to create a brief outlook on the
             application. Then I used Figma to build a low-fidelity prototype, which
             I could to test with potential users.  The results of those user tests
             informed multiple iterations of flow design.
           </div>
-
       </div>
 
       <div class="row">
         <div class="wireframeContainer">
           <div class="imageContainer">
-              <img class="wireframe" src="images/project1/features.png">
-              <img class="wireframe" src="images/project1/account-settings.png">
+              <img class="wireframe" data-aos="fade-up" data-aos-duration="1300" src="images/project1/features.png">
+              <img class="wireframe" data-aos="fade-up" data-aos-duration="1300" src="images/project1/account-settings.png">
           </div>
           <div class="imageContainer">
-              <img class="wireframe" src="images/project1/pricing.png">
-              <img class="wireframe"src="images/project1/signup.png">
+              <img class="wireframe" data-aos="fade-up" data-aos-duration="1300" src="images/project1/pricing.png">
+              <img class="wireframe" data-aos="fade-up" data-aos-duration="1300" src="images/project1/signup.png">
           </div>
           <div class="imageContainer">
-              <img class="wireframe" src="images/project1/upload.png">
-              <img class="wireframe" src="images/project1/upload-1.png">
+              <img class="wireframe" data-aos="fade-up" data-aos-duration="1300" src="images/project1/upload.png">
+              <img class="wireframe" data-aos="fade-up" data-aos-duration="1300" src="images/project1/upload-1.png">
           </div>
         </div>
       </div>
@@ -328,7 +353,7 @@
       </div>
 
       <div class="row">
-        <div class="brandingContainer">
+        <div class="brandingContainer" data-aos="fade-up" data-aos-duration="1300">
           <img class="branding" src="images/project1/vividlogo.png">
           <img class="branding" src="images/project1/color.png">
           <img class="branding" src="images/project1/font.png">
@@ -344,7 +369,7 @@
       </div>
 
       <div class="row">
-        <div class="mockupContainer">
+        <div class="mockupContainer" data-aos="fade-up" data-aos-duration="1300">
           <div class="mockup">
             <img class="mockupImage" src="images/project1/14.png">
           </div>
@@ -359,7 +384,7 @@
           </div>
         </div>
 
-        <div class="mockupContainer">
+        <div class="mockupContainer" data-aos="fade-up" data-aos-duration="1300">
           <div class="mockup">
             <img class="mockupImage" src="images/project1/12.png">
           </div>
@@ -372,7 +397,7 @@
           </div>
         </div>
 
-        <div class="mockupContainer">
+        <div class="mockupContainer" data-aos="fade-up" data-aos-duration="1300">
           <div class="mockup">
             <img class="mockupImage" src="images/project1/13.png">
           </div>
@@ -437,7 +462,7 @@
 
     <div class="moreProjectsContainer">
       <div class="moreProjects">More Projects</div>
-      <div class="project">
+      <div class="project" data-aos="fade-up" data-aos-duration="1300">
         <div class="projectImageContainer">
           <img class="projectImage" src="images/project1/hero.png"/>
         </div>
@@ -454,9 +479,13 @@
         </div>
       </div>
     </div>
+
   </div>
 
-
+  <div onclick="topFunction()" id="myBtn" title="Go to top">
+    <img class="icon" src="images/icons/icons8-chevron_up.png"/>
+    <div class="topButton">TOP</div>
+  </div>
 
   <footer>
     <div class="animated pulse footer">Let's Connect!</div>
@@ -478,8 +507,14 @@
   </footer>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Custom Script -->
   <script src="scriptsProject.js"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
   </body>
 </html>

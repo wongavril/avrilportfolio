@@ -10,12 +10,14 @@
 
       gtag('config', 'UA-135998158-1');
     </script>
-
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>About Me | Avril Wong</title>
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
   </head>
 
@@ -34,7 +36,7 @@
       </div>
     </header>
 
-      <div class="animated fadeInUp bio">
+      <div class="bio" data-aos="fade-up" data-aos-duration="1300">
         <div class="bioHead">
           Hello!
           <br><br>
@@ -43,10 +45,10 @@
           and I'm a UX designer based in San Francisco.
         </div>
         <div class="bioContent">
-          <div class="bioImage">
+          <div class="bioImage" data-aos="fade-up" data-aos-duration="1500">
             <img class="profilePic" src="images/profilepic.jpg"/>
           </div>
-          <div class="bioWriting">
+          <div class="bioWriting" data-aos="fade-up" data-aos-duration="1500">
             <div class="context">
               I absolutely enjoy building user-centric products to solve problems.
               Sprinkles of aesthetics and intuitiveness is always a plus.
@@ -92,6 +94,15 @@
           </a>
         </div>
       </footer>
+
+      <!-- Custom Script -->
+      <script src="scripts.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+        AOS.init();
+      </script>
 
     </body>
   </html>

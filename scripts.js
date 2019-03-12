@@ -41,13 +41,3 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   });
-
-
-  /* CLICK ANIMATION */
-  $('indicator').on('click', function() {
-    $('project').addClass("animated fadeInUp")
-        .one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-          function() {
-            $(this).removeClass("animated fadeInUp");
-          });
-  });

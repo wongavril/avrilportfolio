@@ -1,26 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
-  /* STICKY LOGIC*/
-  const navbar = document.getElementById("navbar");
-  const mainContent = document.getElementById("mainContent");
-
-  const sticky = navbar.offsetTop;
-
-  function applySticky() {
-    if (window.pageYOffset > sticky) {
-      navbar.classList.add("sticky");
-      mainContent.classList.add("smoothContent");
-    } else {
-      navbar.classList.remove("sticky");
-      mainContent.classList.remove("smoothContent");
-    }
-  }
-
-  window.onscroll = function() {applySticky()};
-
-
-  /* HAMBURGER MENU LOGIC */
+  // HAMBURGER MENU
   const icon = document.getElementById("menuIcon");
   const menu = document.getElementById("extendedMenu");
 
@@ -38,24 +19,19 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-/* SCROLL ANIMATIONS LOGIC*/
-$(document).ready(function() {
-  // Check if element is scrolled into view
-  function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "flex";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
   }
-  // If element is scrolled into view, fade it in
-  $(window).scroll(function() {
-    $('.scroll-animations .animated').each(function() {
-      if (isScrolledIntoView(this) === true) {
-        $(this).addClass('fadeInUp');
-      }
-    });
-  });
-});
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

@@ -71,16 +71,13 @@
 .menuLink {
   text-decoration: none;
   color: #F49C31;
-}
-
-.menuLink:link {
-  text-decoration: none;
-  color: #F49C31;
+  border-bottom: 2px solid #FFFBF5;
 }
 
 .menuLink:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #F49C31;
+  border-bottom: 2px solid #F49C31;
 }
 
 .menuLink:visited {
@@ -89,11 +86,6 @@
 }
 
 .indicatorLink {
-  text-decoration: none;
-  color: #F49C31;
-}
-
-.indicatorLink:link {
   text-decoration: none;
   color: #F49C31;
 }
@@ -196,7 +188,7 @@ header {
   font-family: 'Work Sans';
   font-size: 18px;
   color: #F49C31;
-  animation-duration: 2.5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
@@ -336,7 +328,7 @@ footer {
   font-family: 'Work Sans SemiBold';
   font-size: 36px;
   color: #FFFBF5;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 

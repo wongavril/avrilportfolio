@@ -71,23 +71,19 @@
 .menuLink {
   text-decoration: none;
   color: #F49C31;
-}
-
-.menuLink:link {
-  text-decoration: none;
-  color: #F49C31;
+  border-bottom: 2px solid #FFFBF5;
 }
 
 .menuLink:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #F49C31;
+  border-bottom: 2px solid #F49C31;
 }
 
 .menuLink:visited {
   text-decoration: none;
   color: #F49C31;
 }
-
 
 body {
   display: flex;
@@ -150,6 +146,21 @@ header {
 .button:hover {
   background-color: #FFFBF5;
   color: #F49C31;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  color: #F49C31;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
 }
 
 .project {
@@ -216,6 +227,9 @@ header {
   margin: 50px 30px;
   width: 100%;
   z-index: 98;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 .navbar {
@@ -356,11 +370,50 @@ header {
 }
 
 .researchContainer {
-  width: 95%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+}
+
+.userResearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin: 10px;
+}
+
+.researchTitle {
+  font-family: 'Work Sans';
+}
+
+.researchNumber {
+  font-family: 'Work Sans';
+  font-size: 24px;
+  color: #FFFBF5;
+  padding: 10px;
+}
+
+.researchContent {
+  font-family: 'Work Sans';
+  font-size: 14px;
+  color: #FFFBF5;
+  padding: 0 15px;
+}
+
+.researchBG {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(56, 110, 222, .8);
+  width: 300px;
+  height: 120px;
+  margin: 10px 0;
 }
 
 .competitorContainer {
@@ -549,6 +602,10 @@ header {
     width: 85%;
   }
 
+  #myBtn {
+    right: 5px;
+  }
+
   .content {
     width: 85%;
   }
@@ -685,7 +742,7 @@ footer {
   font-family: 'Work Sans SemiBold';
   font-size: 36px;
   color: #FFFBF5;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
