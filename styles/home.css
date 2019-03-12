@@ -315,6 +315,7 @@ header {
   .projectInfo {
     width: 95%;
     padding-top: 10px;
+    padding-left: 0;
   }
 }
 

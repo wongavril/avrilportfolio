@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
-  /* HAMBURGER MENU LOGIC */
+  /* HAMBURGER MENU */
   const icon = document.getElementById("menuIcon");
   const menu = document.getElementById("extendedMenu");
 
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-  /* SCROLL ANIMATIONS LOGIC*/
+  /* SCROLL ANIMATIONS */
   $(document).ready(function() {
     // Check if element is scrolled into view
     function isScrolledIntoView(elem) {
@@ -40,4 +40,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     });
+  });
+
+
+  /* CLICK ANIMATION */
+  $('indicator').on('click', function() {
+    $('project').addClass("animated fadeInUp")
+        .one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+          function() {
+            $(this).removeClass("animated fadeInUp");
+          });
   });

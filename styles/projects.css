@@ -503,7 +503,7 @@ header {
   font-size: 48px;
   font-weight: bold;
   line-height: 130%;
-  margin: 50px 0;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -568,6 +568,7 @@ header {
   .projectInfo {
     width: 95%;
     padding-top: 10px;
+    padding-left: 0;
   }
 
   .heroSection {
