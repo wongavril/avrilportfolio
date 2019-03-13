@@ -389,6 +389,7 @@ header {
 
 .researchTitle {
   font-family: 'Work Sans';
+  width: 200px;
 }
 
 .researchNumber {
@@ -497,6 +498,11 @@ header {
 }
 
 .branding {
+  margin: 15px;
+  width: 40%;
+}
+
+.branding1 {
   margin: 15px;
 }
 
@@ -685,6 +691,10 @@ header {
 
   .brandingContainer {
     flex-direction: column;
+  }
+
+  .branding {
+    width: 100%;
   }
 
   .mockupContainer {
