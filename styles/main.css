@@ -146,6 +146,7 @@ header {
 .button:hover {
   background-color: #FFFBF5;
   color: #F49C31;
+  transition: 0.5s all;
 }
 
 
@@ -624,14 +625,13 @@ a:hover {
 footer {
   bottom: 0;
   width: 100%;
-  height: 150px;
   background-color: #F49C31;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 15px;
-  margin-top: 20px;
+  margin-top: 55px;
+  padding: 70px 0 55px 0;
 }
 
 .footer {
@@ -643,9 +643,10 @@ footer {
 }
 
 .spacer {
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid #FFFBF5;
   width: 72.5%;
-  margin: 20px 0 15px 0;
+  margin: 20px 0 20px 0;
+  max-width: 320px;
 }
 
 .footerIcons {
