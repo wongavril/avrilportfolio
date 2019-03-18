@@ -510,7 +510,7 @@ span {
 }
 
 .userFlow {
-  width: 50%;
+  width: 85%;
   margin: 5px;
 }
 
@@ -523,7 +523,7 @@ span {
 }
 
 .wireframeSketches {
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
