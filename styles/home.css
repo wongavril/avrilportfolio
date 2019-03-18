@@ -196,6 +196,7 @@ header {
 
 .mainContent {
   width: 65%;
+  max-width: 895px;
   display: flex;
   flex-direction: column;
   justify-content: center;

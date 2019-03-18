@@ -727,6 +727,7 @@ span {
 
   .mainContent {
     width: 85%;
+    max-width: 895px;
   }
 
   .researchContainer {
