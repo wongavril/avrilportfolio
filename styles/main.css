@@ -78,6 +78,7 @@
   text-decoration: none;
   color: #F49C31;
   border-bottom: 2px solid #F49C31;
+  opacity: 0.6;
 }
 
 .menuLink:visited {
@@ -110,11 +111,20 @@ header {
   height: 37.5px;
 }
 
+.smallLogo:hover {
+  opacity: 0.6;
+}
+
 .menu {
   width: 72.5%;
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
+}
+
+.menu:hover {
+  opacity: 0.6;
+  transition: 0.5s all;
 }
 
 .icon {
@@ -140,7 +150,7 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .button:hover {
@@ -274,18 +284,6 @@ header {
   .project {
     flex-direction: column;
   }
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 .mainContent{
@@ -656,10 +654,6 @@ footer {
   width: 250px;
 }
 
-.footerLink {
-  border-bottom: 2px solid #F49C31;
-}
-
 .footerLink:hover {
-  border-bottom: 2px solid #FFFBF5;
+  opacity: 0.6;
 }

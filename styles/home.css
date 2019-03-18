@@ -38,15 +38,6 @@
   transform: rotate(90deg);
 }
 
-/* .sticky {
-  position: fixed;
-  top: 0;
-}
-
-.smoothContent {
-  padding-top: 35px;
-} */
-
 .hide {
   display: none;
 }
@@ -78,6 +69,7 @@
   text-decoration: none;
   color: #F49C31;
   border-bottom: 2px solid #F49C31;
+  opacity: 0.6;
 }
 
 .menuLink:visited {
@@ -127,6 +119,11 @@ header {
   cursor: pointer;
 }
 
+.menu:hover {
+  opacity: 0.6;
+  transition: 0.5s all;
+}
+
 .icon {
   width: 30px;
   height: 30px;
@@ -156,7 +153,7 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .button:hover {
