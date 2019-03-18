@@ -93,7 +93,7 @@ body {
   background-color: #FFFBF5;
   color: #373737;
   font-family: 'Proxima Nova';
-  font-size: 18px;
+  font-size: 20px;
   line-height: 130%;
   margin-top: 30px;
 }
@@ -162,6 +162,10 @@ header {
   cursor: pointer;
   padding: 15px;
   font-size: 18px;
+}
+
+#myBtn:hover{
+  opacity: 0.7;
 }
 
 .project {
@@ -243,8 +247,9 @@ header {
 }
 
 .navbarButton {
-  width: 105px;
+  width: 110px;
   font-family: 'Work Sans Thin';
+  font-size: 18px;
 }
 
 .navbarButton:link {
@@ -269,6 +274,17 @@ header {
   width: 65%;
 }
 
+.contentLink {
+  text-decoration: none;
+  font-family: 'Proxima Nova SemiBold';
+  color: #E75A48;
+}
+
+.contentLink:hover {
+  opacity: 0.6;
+  transition: .5s all;
+}
+
 .personaContainer {
   width: 72.5%;
   display: flex;
@@ -278,6 +294,7 @@ header {
 
 .persona {
   width: 50%;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -299,6 +316,11 @@ header {
   font-size: 18px;
 }
 
+.personaDescription1 {
+  font-family: 'Work Sans SemiBold';
+  font-size: 18px;
+}
+
 .personaMotivation {
   font-family: 'Work Sans Thin';
   font-style: italic;
@@ -316,6 +338,20 @@ header {
 .personaContent {
   width: 100%;
   padding-bottom: 30px;
+  line-height: 120%;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-top: 8px;
+}
+
+b {
+  font-family: 'Proxima Nova SemiBold';
 }
 
 @media only screen and (max-width: 1150px) {
@@ -389,22 +425,26 @@ header {
 }
 
 .researchTitle {
-  font-family: 'Work Sans';
-  width: 200px;
+  font-family: 'Work Sans SemiBold';
+  width: 300px;
 }
 
 .researchNumber {
   font-family: 'Work Sans';
-  font-size: 24px;
+  font-size: 48px;
   color: #FFFBF5;
   padding: 10px;
+}
+
+span {
+  font-size: 24px;
 }
 
 .researchContent {
   font-family: 'Work Sans';
   font-size: 14px;
   color: #FFFBF5;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .researchBG {
@@ -416,6 +456,7 @@ header {
   width: 300px;
   height: 120px;
   margin: 10px 0;
+  padding: 10px;
 }
 
 .competitorContainer {
@@ -478,6 +519,10 @@ header {
   margin: 50px 0;
 }
 
+.logodraft {
+  margin: 50px;
+}
+
 .imageContainer {
   width: 95%;
   display: flex;
@@ -487,7 +532,7 @@ header {
 
 .wireframe {
   width: 50%;
-  margin: 5px;
+  margin: 15px;
 }
 
 .brandingContainer {
@@ -505,6 +550,29 @@ header {
 
 .branding1 {
   margin: 15px;
+}
+
+.logodraft {
+  margin: 50px 0;
+}
+
+.userTesting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userTestingContainer {
+  width: 45%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userTestingImage {
+  width: 100%;
 }
 
 .mockupContainer {
@@ -528,7 +596,7 @@ header {
 }
 
 .mockupInfo {
-  margin-left: 10px;
+  margin-left: 20px;
   width: 50%;
 }
 
@@ -536,6 +604,8 @@ header {
   font-family: 'Work Sans SemiBold';
   font-size: 16px;
   line-height: 130%;
+  text-decoration: underline;
+  margin-bottom: 8px;
 }
 
 .caption {
@@ -677,11 +747,6 @@ header {
     flex-direction: column;
   }
 
-  .wireframeSketches {
-    width: 100%;
-    margin: 0 0 15px 0;
-  }
-
   .imageContainer {
     width: 100%;
   }
@@ -695,6 +760,18 @@ header {
   }
 
   .branding {
+    width: 100%;
+  }
+
+  .logodraft {
+    width: 100%;
+  }
+
+  .userTesting {
+    flex-direction: column;
+  }
+
+  .userTestingContainer {
     width: 100%;
   }
 
