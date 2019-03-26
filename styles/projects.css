@@ -570,12 +570,14 @@ span {
 
 .userTesting {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 30px 0;
 }
 
 .userTestingContainer {
-  width: 45%;
+  width: 85%;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -599,12 +601,11 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 100%;
 }
 
 .mockupImage {
-  width: 100%;
+  width: 95%;
 }
 
 .mockupInfo {
@@ -781,7 +782,7 @@ span {
   }
 
   .userTesting {
-    flex-direction: column;
+    width: 95%;
   }
 
   .userTestingContainer {
@@ -789,7 +790,7 @@ span {
   }
 
   .mockupContainer {
-    width: 85%;
+    width: 95%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
