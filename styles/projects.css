@@ -277,6 +277,7 @@ header {
   color: #F49C31;
   text-decoration: none;
   font-family: 'Work Sans SemiBold';
+  transition-duration: 0.5s all;
 }
 
 .navbarText {
@@ -293,7 +294,7 @@ header {
 
 .contentLink:hover {
   opacity: 0.6;
-  transition: .5s all;
+  transition: 0.5s all;
 }
 
 .personaContainer {
