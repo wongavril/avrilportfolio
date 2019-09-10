@@ -494,6 +494,10 @@ span {
   flex-direction: column;
 }
 
+.appIcon {
+  width: 200px;
+}
+
 .personaContainer {
   width: 95%;
   display: flex;
@@ -539,12 +543,12 @@ span {
   width: 95%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .wireframe {
-  width: 50%;
-  margin: 15px;
+  width: 30%;
+  margin: 50px 15px 0px 15px;
 }
 
 .brandingContainer {
@@ -566,7 +570,13 @@ span {
 }
 
 .logodraft {
+  max-width: 895px;
   margin: 50px 0;
+}
+
+.finallogo {
+  align-content: center;
+  margin: 50px;
 }
 
 .userTesting {
