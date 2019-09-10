@@ -421,7 +421,7 @@ b {
 .researchContainer {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 50px;
 }
@@ -439,6 +439,10 @@ b {
 .researchTitle {
   font-family: 'Work Sans SemiBold';
   width: 300px;
+}
+
+.expandResearchTitle {
+  font-family: 'Work Sans SemiBold';
 }
 
 .researchNumber {
@@ -466,6 +470,17 @@ span {
   align-items: center;
   background-color: rgba(56, 110, 222, .8);
   width: 300px;
+  height: 120px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.researchBG1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(56, 110, 222, .8);
+
   height: 120px;
   margin: 10px 0;
   padding: 10px;
@@ -547,7 +562,7 @@ span {
 }
 
 .wireframe {
-  width: 30%;
+  width: 50%;
   margin: 50px 15px 0px 15px;
 }
 
