@@ -765,6 +765,14 @@ span {
     margin-bottom: 15px;
   }
 
+  .expandResearchTitle {
+    width: 300px;
+  }
+
+  .appIcon {
+    width: 50%;
+  }
+
   .personaContainer {
     flex-direction: column;
   }
@@ -805,6 +813,10 @@ span {
 
   .logodraft {
     width: 100%;
+  }
+
+  .finallogo {
+    width: 85%;
   }
 
   .userTesting {
