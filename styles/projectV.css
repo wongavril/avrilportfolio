@@ -421,7 +421,7 @@ b {
 .researchContainer {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
 }
@@ -439,10 +439,6 @@ b {
 .researchTitle {
   font-family: 'Work Sans SemiBold';
   width: 300px;
-}
-
-.expandResearchTitle {
-  font-family: 'Work Sans SemiBold';
 }
 
 .researchNumber {
@@ -475,17 +471,6 @@ span {
   padding: 10px;
 }
 
-.researchBG1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(56, 110, 222, .8);
-
-  height: 120px;
-  margin: 10px 0;
-  padding: 10px;
-}
-
 .competitorContainer {
   display: flex;
   flex-direction: column;
@@ -507,10 +492,6 @@ span {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-}
-
-.appIcon {
-  width: 200px;
 }
 
 .personaContainer {
@@ -558,12 +539,12 @@ span {
   width: 95%;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .wireframe {
   width: 50%;
-  margin: 50px 15px 0px 15px;
+  margin: 15px;
 }
 
 .brandingContainer {
@@ -585,13 +566,7 @@ span {
 }
 
 .logodraft {
-  max-width: 895px;
   margin: 50px 0;
-}
-
-.finallogo {
-  align-content: center;
-  margin: 50px;
 }
 
 .userTesting {
@@ -765,14 +740,6 @@ span {
     margin-bottom: 15px;
   }
 
-  .expandResearchTitle {
-    width: 300px;
-  }
-
-  .appIcon {
-    width: 50%;
-  }
-
   .personaContainer {
     flex-direction: column;
   }
@@ -813,16 +780,6 @@ span {
 
   .logodraft {
     width: 100%;
-  }
-
-  .finallogo {
-    width: 90%;
-    margin: 0 0 50px 0;
-  }
-
-  .palette {
-    width: 85%;
-    margin: 50px 0;
   }
 
   .userTesting {
