@@ -609,8 +609,10 @@ span {
 }
 
 .finallogo {
-  align-content: center;
-  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .userTesting {
@@ -840,7 +842,7 @@ span {
 
   .finallogo {
     width: 90%;
-    margin: 50px 0;
+    margin-top: 50px;
   }
 
   .palette {
