@@ -33,7 +33,7 @@
   src: url('./fonts/worksans/WorkSans-Thin.ttf');
 }
 
-.rotate90 {
+/*.rotate90 {
   transform-origin: 50% 50%;
   transform: rotate(90deg);
 }
@@ -55,23 +55,18 @@
   display: flex;
 }
 
-.hamburgerMenu {
-  position: relative;
-  z-index: 99;
-}
-
-.extendedMenu {
-  position: absolute;
-  justify-content: space-evenly;
+.menu {
   width: 200px;
-  top: 120px;
-  left: -87px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .menuLink {
   text-decoration: none;
   color: #F49C31;
   border-bottom: 2px solid #FFFBF5;
+  margin: 0 15px;
 }
 
 .menuLink:hover {
@@ -84,7 +79,7 @@
 .menuLink:visited {
   text-decoration: none;
   color: #F49C31;
-}
+}*/
 
 body {
   display: flex;
@@ -101,9 +96,43 @@ body {
 
 header {
   width: 85%;
+  height: 85px;
+  background-color: #FFFBF5;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 30px;
+  z-index: 99;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  width: 200px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: #F49C31;
+  border-bottom: 2px solid #FFFBF5;
+  margin: 0 15px;
+}
+
+.menuLink:hover {
+  text-decoration: none;
+  color: #F49C31;
+  border-bottom: 2px solid #F49C31;
+  opacity: 0.6;
+}
+
+.menuLink:visited {
+  text-decoration: none;
+  color: #F49C31;
 }
 
 .smallLogo {
@@ -116,25 +145,13 @@ header {
   transition: 0.3s all;
 }
 
-.menu {
-  width: 72.5%;
-  cursor: pointer;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.menu:hover {
-  opacity: 0.6;
-  transition: 0.3s all;
-}
-
 .icon {
   width: 30px;
   height: 30px;
 }
 
 .content {
-  width: 85%;
+  width: 65%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -211,6 +228,7 @@ header {
   font-size: 32px;
   font-weight: bold;
   line-height: 130%;
+  margin: 15px 0;
 }
 
 .projectSubtitle {
@@ -235,7 +253,8 @@ header {
 
 .introImage {
   width: 100%;
-  margin: 25px 0;
+  min-height: 550px;
+  object-fit: cover;
 }
 
 .heroSection {
@@ -396,7 +415,7 @@ b {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 75%;
+  width: 65%;
 }
 
 .row {
@@ -405,8 +424,36 @@ b {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 25px 0;
+  margin: 50px 0;
+}
 
+.subrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+
+.paragraphRight {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 25px 25px;
+}
+
+.paragraphLeft {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 25px 25px 25px 0;
 }
 
 .title {
@@ -429,12 +476,12 @@ b {
 
 .subtitle {
   width: 100%;
-  font-family: 'Proxima Nova SemiBold';
-  font-size: 18px;
+  font-family: 'Proxima Nova';
+  font-size: 28px;
   line-height: 120%;
   text-decoration: underline;
   text-align: left;
-  padding: 5px 0;
+  padding: 15px 0;
 }
 
 .context {
@@ -442,19 +489,18 @@ b {
 }
 
 .researchContainer {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 .userResearch {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin: 10px;
 }
 
 .userResearch1 {
@@ -511,24 +557,15 @@ span {
 .competitorContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
 }
 
 .competitorIcon {
   width: 95%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
-}
-
-.competitiveAnalysis {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
 }
 
 .appIcon {
@@ -620,32 +657,26 @@ span {
 }
 
 .logodraft {
-  max-width: 895px;
-  margin: 50px 0;
+  max-width: 650px;
 }
 
 .finallogo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  margin-top: 50px;
-}
-
-.colorpalette {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 95%;
-  margin-bottom: 30px;
 }
 
 .font {
+  width: 100%;
+}
+
+.colorpalette {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 95%;
-  margin-bottom: 30px;
 }
 
 .userTesting {
@@ -658,7 +689,7 @@ span {
 
 .userTestingContainer {
   width: 85%;
-  margin: 20px;
+  margin: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -666,7 +697,7 @@ span {
 }
 
 .userTestingImage {
-  width: 100%;
+  width: 85%;
 }
 
 .mockupContainer {
@@ -712,6 +743,10 @@ span {
   align-items: center;
   margin-bottom: 50px;
   width: 85%;
+}
+
+.demo {
+  width: 100%;
 }
 
 .moreProjectsContainer {
@@ -875,7 +910,6 @@ span {
 
   .finallogo {
     width: 90%;
-    margin-top: 50px;
   }
 
   .palette {
