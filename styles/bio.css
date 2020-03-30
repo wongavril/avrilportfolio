@@ -680,6 +680,8 @@ span {
 
 .profilePic {
   width: 100%;
+  min-height: 490px;
+  object-fit: cover;
 }
 
 .bioWriting {

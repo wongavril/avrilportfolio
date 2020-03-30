@@ -445,7 +445,7 @@ b {
 .paragraphRight {
   display: flex;
   flex-direction: column;
-  margin: 25px 0 25px 25px;
+  margin: 25px 0 25px 50px;
 }
 
 .paragraphLeft {
@@ -453,7 +453,7 @@ b {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin: 25px 25px 25px 0;
+  margin: 25px 50px 25px 0;
 }
 
 .title {
@@ -569,7 +569,7 @@ span {
 }
 
 .appIcon {
-  width: 200px;
+  box-shadow: 2px 2px 6px #c4c4c4;
 }
 
 .personaContainer {
@@ -602,7 +602,7 @@ span {
 }
 
 .sketches {
-  width: 49%;
+  width: 100%;
   box-shadow: 2px 2px 10px #c4c4c4;
 }
 
@@ -623,7 +623,9 @@ span {
 }
 
 .logodraft {
+  width: 95%;
   margin: 50px;
+  box-shadow: 2px 2px 10px #c4c4c4;
 }
 
 .imageContainer {
@@ -635,6 +637,7 @@ span {
 
 .wireframe {
   width: 50%;
+  box-shadow: 2px 2px 10px #c4c4c4;
   margin: 50px 15px 0px 15px;
 }
 
@@ -656,15 +659,12 @@ span {
   margin: 15px;
 }
 
-.logodraft {
-  max-width: 650px;
-}
-
 .finallogo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95%;
+  width: 100%;
+  box-shadow: 2px 2px 10px #c4c4c4;
 }
 
 .font {
@@ -688,16 +688,18 @@ span {
 }
 
 .userTestingContainer {
-  width: 85%;
+  width: 95%;
   margin: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 50px;
 }
 
 .userTestingImage {
-  width: 85%;
+  width: 100%;
+  box-shadow: 2px 2px 10px #c4c4c4;
 }
 
 .mockupContainer {
@@ -763,7 +765,6 @@ span {
   font-size: 32px;
   font-weight: bold;
   line-height: 130%;
-  margin-top: 50px;
   text-align: center;
 }
 
@@ -861,10 +862,6 @@ span {
 
   .researchBox {
     flex-direction: column;
-  }
-
-  .appIcon {
-    width: 50%;
   }
 
   .personaContainer {
