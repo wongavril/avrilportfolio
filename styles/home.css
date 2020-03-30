@@ -227,17 +227,23 @@ header {
   color: #F49C31;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  margin: 150px 0;
 }
 
 .indicatorSpacing {
-  padding: 150px 40px;
+  padding: 50px 40px;
+}
+
+.indicatorLink {
+  text-decoration: none;
+  color: #F49C31;
 }
 
 .indicatorLink:hover {
   text-decoration: none;
   color: #F49C31;
-  border-bottom: 2px solid #F49C31;
   opacity: 0.6;
+  animation: none;
 }
 
 .indicatorLink:visited {
