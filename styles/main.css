@@ -33,7 +33,7 @@
   src: url('./fonts/worksans/WorkSans-Thin.ttf');
 }
 
-.rotate90 {
+/*.rotate90 {
   transform-origin: 50% 50%;
   transform: rotate(90deg);
 }
@@ -84,7 +84,7 @@
 .menuLink:visited {
   text-decoration: none;
   color: #F49C31;
-}
+}*/
 
 body {
   display: flex;
