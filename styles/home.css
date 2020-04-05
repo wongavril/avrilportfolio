@@ -296,9 +296,6 @@ header {
 
 .projectButton {
   padding-top: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .intro {
@@ -455,17 +452,6 @@ li {
 
 b {
   font-family: 'Proxima Nova SemiBold';
-}
-
-@media only screen and (max-width: 1150px) {
-  .navbar {
-    height: 70px;
-  }
-  .navbarText {
-    width: 80%;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 
 .mainContent{
@@ -891,6 +877,12 @@ span {
     width: 95%;
     padding-top: 10px;
     padding-left: 0;
+  }
+
+  .projectButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .heroSection {
