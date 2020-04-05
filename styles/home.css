@@ -66,7 +66,7 @@
   text-decoration: none;
   color: #F49C31;
   border-bottom: 2px solid #FFFBF5;
-  margin: 0 15px;
+  margin: 25px;
 }
 
 .menuLink:hover {
@@ -296,6 +296,9 @@ header {
 
 .projectButton {
   padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro {
@@ -854,7 +857,7 @@ span {
   width: 70%;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1150px) {
   header {
     width: 85%;
   }
@@ -872,6 +875,7 @@ span {
   }
 
   .project {
+    width: 95%;
     flex-direction: column;
     align-items: center;
     justify-content: center;

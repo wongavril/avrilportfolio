@@ -120,7 +120,7 @@ header {
   text-decoration: none;
   color: #F49C31;
   border-bottom: 2px solid #FFFBF5;
-  margin: 0 15px;
+  margin-left: 25px;
 }
 
 .menuLink:hover {
@@ -801,7 +801,7 @@ span {
   width: 70%;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1150px) {
   header {
     width: 85%;
   }
@@ -818,6 +818,32 @@ span {
     width: 85%;
   }
 
+  .row {
+    margin: 25px 0;
+  }
+
+  .subrow {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .paragraphRight {
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  .paragraphLeft {
+    margin: 25px 0;
+  }
+
+  .introImage {
+    min-height: unset;
+    object-fit: unset;
+  }
+
   .project {
     flex-direction: column;
     align-items: center;
@@ -830,8 +856,12 @@ span {
     width: 100%;
   }
 
+  .project {
+    width: 100%;
+  }
+
   .projectInfo {
-    width: 95%;
+    width: 100%;
     padding-top: 10px;
     padding-left: 0;
   }
@@ -848,19 +878,11 @@ span {
     width: 85%;
   }
 
-  .researchContainer {
-    flex-direction: column;
-  }
-
-  .research {
-    margin-bottom: 15px;
-  }
-
   .expandResearchTitle {
     width: 300px;
   }
 
-  .researchBox {
+  .researchBG {
     flex-direction: column;
   }
 
@@ -874,10 +896,6 @@ span {
     margin:30px 0 50px 0;
   }
 
-  .imageContainer {
-    flex-direction: column;
-  }
-
   .userFlow {
     width: 100%;
   }
@@ -886,11 +904,29 @@ span {
     flex-direction: column;
   }
 
+  .wireframeSketches {
+    margin: 15px 0;
+  }
+
   .imageContainer {
     width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .wireframe {
+    width: 100%;
+    box-shadow: 2px 2px 10px #c4c4c4;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .sketchesContainer {
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .sketches {
     width: 100%;
   }
 
@@ -904,6 +940,7 @@ span {
 
   .logodraft {
     width: 100%;
+    margin: 15px;
   }
 
   .finallogo {
@@ -921,6 +958,11 @@ span {
 
   .userTestingContainer {
     width: 100%;
+    margin: 25px 0 0 0;
+  }
+
+  .userTestingImage {
+    margin: 15px 0;
   }
 
   .mockupContainer {
@@ -939,6 +981,18 @@ span {
     flex-direction: column;
     padding-top: 10px;
   }
+
+  .projectButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .moreProjects {
+    margin-top: 15px;
+  }
+  
 
   .bio {
     width: 85%;
@@ -960,6 +1014,30 @@ span {
 
 
 }
+
+@media screen and (max-width: 500px) {
+  .intro {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .introText {
+    margin: 15px 0;
+  }
+
+  .research {
+    margin-bottom: 15px;
+  }
+
+  .userResearch {
+    flex-direction: column;
+  }
+
+  .appIcon {
+    width: 90px;
+  }
+}
+
 
 footer {
   bottom: 0;

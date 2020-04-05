@@ -120,7 +120,7 @@ header {
   text-decoration: none;
   color: #F49C31;
   border-bottom: 2px solid #FFFBF5;
-  margin: 0 15px;
+  margin-left: 25px;
 }
 
 .menuLink:hover {
@@ -241,6 +241,8 @@ header {
 
 .projectButton {
   padding-top: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro {
@@ -399,17 +401,6 @@ b {
   font-family: 'Proxima Nova SemiBold';
 }
 
-@media only screen and (max-width: 1150px) {
-  .navbar {
-    height: 70px;
-  }
-  .navbarText {
-    width: 80%;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
 .mainContent{
   display: flex;
   flex-direction: column;
@@ -432,6 +423,10 @@ b {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.intro {
+  justify-content: space-between;
 }
 
 .card {
@@ -806,7 +801,7 @@ span {
   width: 70%;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1150px) {
   header {
     width: 85%;
   }
@@ -823,6 +818,32 @@ span {
     width: 85%;
   }
 
+  .row {
+    margin: 25px 0;
+  }
+
+  .subrow {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .paragraphRight {
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  .paragraphLeft {
+    margin: 25px 0;
+  }
+
+  .introImage {
+    min-height: unset;
+    object-fit: unset;
+  }
+
   .project {
     flex-direction: column;
     align-items: center;
@@ -835,8 +856,12 @@ span {
     width: 100%;
   }
 
+  .project {
+    width: 100%;
+  }
+
   .projectInfo {
-    width: 95%;
+    width: 100%;
     padding-top: 10px;
     padding-left: 0;
   }
@@ -857,20 +882,12 @@ span {
     flex-direction: column;
   }
 
-  .research {
-    margin-bottom: 15px;
-  }
-
   .expandResearchTitle {
     width: 300px;
   }
 
   .researchBox {
     flex-direction: column;
-  }
-
-  .appIcon {
-    width: 50%;
   }
 
   .personaContainer {
@@ -903,6 +920,14 @@ span {
     width: 100%;
   }
 
+  .sketchesContainer {
+    margin: 15px;
+  }
+
+  .sketches {
+    width: 100%;
+  }
+
   .brandingContainer {
     flex-direction: column;
   }
@@ -913,6 +938,7 @@ span {
 
   .logodraft {
     width: 100%;
+    margin: 0;
   }
 
   .finallogo {
@@ -949,6 +975,18 @@ span {
     padding-top: 10px;
   }
 
+  .projectButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .moreProjects {
+    margin-top: 15px;
+  }
+  
+
   .bio {
     width: 85%;
   }
@@ -968,6 +1006,29 @@ span {
   }
 
 
+}
+
+@media screen and (max-width: 500px) {
+  .intro {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .introText {
+    margin: 15px 0;
+  }
+
+  .research {
+    margin-bottom: 15px;
+  }
+
+  .userResearch {
+    flex-direction: column;
+  }
+
+  .appIcon {
+    width: 90px;
+  }
 }
 
 footer {
