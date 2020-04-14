@@ -623,6 +623,7 @@ span {
 }
 
 .logodraft {
+  width: 95%;
   margin: 50px;
 }
 
@@ -654,10 +655,6 @@ span {
 .branding1 {
   height: 140px;
   margin: 15px;
-}
-
-.logodraft {
-  max-width: 650px;
 }
 
 .finallogo {
@@ -937,7 +934,7 @@ span {
   }
 
   .logodraft {
-    width: 100%;
+    width: 95%;
     margin: 0;
   }
 

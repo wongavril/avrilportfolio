@@ -612,6 +612,7 @@ span {
 }
 
 .logodraft {
+  width: 95%;
   margin: 50px;
 }
 
@@ -936,7 +937,7 @@ span {
   }
 
   .finallogo {
-    width: 90%;
+    width: 85%;
   }
 
   .palette {
