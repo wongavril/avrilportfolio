@@ -204,9 +204,9 @@ header {
 
 .hero {
   font-family: 'Karla Bold';
-  font-size: 32px;
+  font-size: 36px;
   line-height: 120%;
-  padding-top: 50px;
+  padding-top: 120px;
 }
 
 .byLine {
